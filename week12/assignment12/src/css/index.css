@@ -47,5 +47,5 @@
 *::after {
   box-sizing: border-box; /* width and height include padding and border */
   margin: 0; /* remove default browser margins from all elements */
-  padding: 0; /* remove default browser padding from all elements */
+  padding: 1rem; /* remove default browser padding from all elements */
 }

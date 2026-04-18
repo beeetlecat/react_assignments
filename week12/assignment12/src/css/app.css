@@ -1,45 +1,40 @@
-/* ── Root container ─────────────────────────────────────────
-   Centers the entire app and caps its width on wide screens  */
+/* ROOT CONTAINER
+   This centers your entire app on the page and keeps it from getting too wide,
+   while adding some space around the content. */
 #root {
-  max-width: 1280px; /* stop the layout from stretching too wide */
-  margin: 0 auto; /* center the container horizontally */
-  padding: 2rem; /* breathing room on all sides */
-  text-align: center; /* center inline content like headings */
+  max-width: 1280px; /* Limit the maximum width so content doesn’t stretch too wide */
+  margin: 0 auto; /* Center the container horizontally (auto left/right margins) */
+  padding: 2rem; /* Add space inside the container (around all content) */
+  text-align: center; /* Center-align text inside the container */
 }
-/* BLOCK: project (page-level container) */
-.project {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  border: 1px solid #f0f0f0;
+
+/* GRID LAYOUT
+   This creates a responsive grid that automatically adjusts the number of columns
+   based on screen size, keeping each item at a reasonable width. */
+.project-grid {
+  display: grid; /* Use CSS Grid layout */
+  /* Create responsive columns:
+     - auto-fill: fit as many columns as possible
+     - minmax(200px, 1fr): each column is at least 200px, but can grow */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem; /* Space between grid items (rows and columns) */
 }
+
+/* CARD DESIGN
+   Each book is displayed as a card with padding, a border, and a shadow
+   to visually separate it from other items. */
 .project-card {
-  max-width: 400px;
-  margin: 0 auto 1.5rem;
+  border: 1px solid #ddd; /* Light gray border around each card */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1rem; /* Space inside the card */
 
-  border: 1px solid #646cff;
-  border-radius: 0.5rem;
-  padding: 1rem;
-
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-/* ELEMENT of project */
-.project__title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  /* Subtle shadow to lift the card visually */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* ELEMENT */
-/* BLOCK: app-footer */
-.app-footer {
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-
-  background-color: #148452;
-  border-top: 1px solid #ccc;
-
-  font-size: 0.9rem;
-  color: #555;
+/* IMAGE HANDLING
+   Ensures images fit nicely inside the card and match the rounded style. */
+.project-card img {
+  max-width: 100%; /* Make image responsive (never overflow its container) */
+  border-radius: 4px; /* Slightly rounded corners for the image */
 }

@@ -7,9 +7,11 @@ function App() {
   return (
     <div>
       <h1>Gothic Books and Short Stories</h1>
+      <div className='book-grid'>
       {books.map ((books) =>(
         <BookCard key={books.id} title={books.title} author={books.author} description={books.description} bookArt={books.image}/>
       ))}
+      </div>
       <Footer/>
     </div>
   );
