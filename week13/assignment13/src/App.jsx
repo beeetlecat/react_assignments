@@ -1,12 +1,18 @@
 import "./css/app.css";
+import About from "./pages/About.jsx";
+import ProjectsPage from "./pages/ProjectsPage.jsx";
+import NavBar from "./components/Navbar.jsx";
 
-import Home from "./pages/Home.jsx";
+import ProjectList from "./components/ProjectList.jsx";
+// import Home from "./pages/Home.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <h2>Hello World!</h2>
-      <Home />
+    <div>
+      <NavBar/>
+      <About />
+      <ProjectsPage/>
+      {/* <ProjectList /> */}
     </div>
   )
 }

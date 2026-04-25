@@ -38,3 +38,34 @@
   max-width: 100%; /* Make image responsive (never overflow its container) */
   border-radius: 4px; /* Slightly rounded corners for the image */
 }
+
+nav ul a {
+    text-decoration: none;
+    font-family: var(--sanserif);
+    color: rgb(53, 32, 5);
+    font-size: .8em;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 0.25rem;
+    flex-wrap: nowrap;
+}
+
+.nav__item {
+    background-color: rgba(245, 160, 62, 0.769);
+    margin: 0.5rem;
+    display: block;
+    padding: 0.5rem;
+    text-wrap: nowrap;
+}
+
+.nav__item:hover {
+  background-color: #fae5ca;
+}
+
