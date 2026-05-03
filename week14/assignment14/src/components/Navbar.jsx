@@ -1,17 +1,17 @@
-
+import { Link } from "react-router-dom";
 
 function NavBar () {
     return (
         <nav>
             <ul>
                 <li className="nav__item">
-                    <a href="#">Home</a>
+                    <Link to="/">Home</Link>
                 </li>
                 <li className="nav__item">
-                    <a href="#">About</a>
+                    <Link to="/About">About</Link>
                 </li>
                 <li className="nav__item">
-                    <a href="#">Projects</a>
+                    <Link to="/ProjectsPage">Projects</Link>
                 </li>
             </ul>
         </nav>
@@ -19,3 +19,4 @@ function NavBar () {
 }
 
 export default NavBar;
+

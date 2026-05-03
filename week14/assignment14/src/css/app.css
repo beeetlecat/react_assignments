@@ -17,7 +17,7 @@
      - auto-fill: fit as many columns as possible
      - minmax(200px, 1fr): each column is at least 200px, but can grow */
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.5rem; /* Space between grid items (rows and columns) */
+  gap: 1rem; /* Space between grid items (rows and columns) */
 }
 
 /* CARD DESIGN

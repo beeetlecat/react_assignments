@@ -11,7 +11,7 @@ function ProjectCard({title, author, image, link, description}) {
         <div>
             <article className="project-card">
                 <img src = {image} alt={title} className="project-image"/>
-                <h2>{title}</h2>
+                <h3>{title}</h3>
                 <p>{author}</p>
                 <button onClick={toggleDescriptionStatus}>
                     {isVisible ? "Hide Description" : "Description"}

@@ -1,12 +1,11 @@
 import ProjectCard from "./ProjectCard.jsx";
 import { projects } from "../data/projectData";
 
-function ProjectList() {
+function Projects({limit}) {
+    const displayed = limit ? projects.slice(0, limit) : projects;
     return (
-        <div>
-            <h1>Projects</h1>
             <div className = "project-grid">
-                {projects.map((project) => (
+                {displayed.map((project) => (
                     <ProjectCard
                         key={project.id}
                         title={project.title}
@@ -17,8 +16,7 @@ function ProjectList() {
                     />
                 ))}
             </div>
-        </div>
     );
 }
 
-export default ProjectList;
+export default Projects;
