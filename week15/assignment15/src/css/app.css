@@ -1,0 +1,129 @@
+
+#root {
+  max-width: 1280px; /* Limit the maximum width so content doesn’t stretch too wide */
+  margin: 0 auto; /* Center the container horizontally (auto left/right margins) */
+  padding: 2rem; /* Add space inside the container (around all content) */
+  text-align: center; /* Center-align text inside the container */
+}
+
+h1 {
+  padding: 2rem;
+}
+
+a {
+  color:#fae5ca;
+}
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-gap: 0px;
+    padding: 0rem;
+    align-content: start;
+    justify-content: center;
+    align-items: start; 
+    justify-items: center; 
+}
+
+.project-card {
+  border: 6px dashed #FF9DA3; 
+  border-radius: 8px; 
+  padding: 1rem; 
+  background-color: #DB6680;
+  /* height: 50vh; */
+
+}
+
+/* IMAGE HANDLING
+   Ensures images fit nicely inside the card and match the rounded style. */
+.project-card img {
+  background-color: #FF9DA3;
+  max-width: 100%; /* Make image responsive (never overflow its container) */
+  overflow: clip;
+}
+
+.card-title {
+  color: #372923;
+}
+
+
+.button {
+  background-color:#6E5248;
+  color:#FFEBC6;
+  border: none;
+  padding: 1rem;
+  margin: 0.5rem;
+  font: 18px/145% var(--mono);
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color:#9e847b;
+  color:#d4c6c2;
+}
+
+.more-link {
+  color: #6E5248;
+  background-color:#FFEBC6;
+  text-decoration: none;
+  /* font-size: 9pt; */
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.more-link:hover {
+  background-color:#fcf3e2;
+  color: #bdaaa4;
+}
+
+.homepage {
+  background-color: rgb(178, 189, 139, 0.5);
+  color:#532027;
+}
+
+.projectspage {
+  background-color: rgb(219, 102, 128, 0.4);
+}
+
+.aboutpage {
+  background-color: rgb(255, 157, 163, 0.5);  
+}
+
+.portrait {
+  max-width: 50%;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-family: var(--sanserif);
+    color: #532027;
+    font-size: .8em;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 0.25rem;
+    flex-wrap: nowrap;
+}
+
+.nav__item {
+    background-color: #B2BD8B;
+    margin: 0.5rem;
+    display: block;
+    padding: 0.5rem;
+    text-wrap: nowrap;
+}
+
+.nav__item:hover {
+  background-color: #FF9DA3;
+}
+
+footer {
+  margin-top: 2rem;
+}

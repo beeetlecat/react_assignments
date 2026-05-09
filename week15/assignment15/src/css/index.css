@@ -1,0 +1,62 @@
+@import url("https://fonts.google.com/specimen/Roboto+Mono?preview.text=No%20Prince&query=bold&categoryFilters=Sans+Serif:%2FSans%2F*");
+
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("../../all_fonts/RobotoMono-Light.ttf");
+}
+
+
+
+:root {
+  --text: #6E5248;
+  --bg: #6E5248;
+  --border: #6E5248;
+
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: "Roboto Mono";
+
+  /* ui-monospace, Consolas, monospace; */
+
+  font: 18px/145% var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border: 12px dashed var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  background-image: url("../../public/paper.jpeg");
+  background-position: initial;
+	background-size: contain;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* width and height include padding and border */
+  margin: 0; /* remove default browser margins from all elements */
+  padding: 1rem; /* remove default browser padding from all elements */
+}
