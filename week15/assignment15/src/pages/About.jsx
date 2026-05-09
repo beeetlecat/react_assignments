@@ -1,4 +1,4 @@
-import portrait from "../../public/portrait.png";
+import portrait from "/portrait.png";
 
 
 function About() {
